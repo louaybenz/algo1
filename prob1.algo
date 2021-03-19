@@ -1,0 +1,27 @@
+ALGORITHM probl1
+VAR
+var i:INTEGER;
+var j:INTEGER;
+var Voyelle :ARRAY_OF String;
+var nbword  =1 :INTEGER;
+var chaine :String;
+var nbvoyelle =0 :INTEGER;
+BEGIN
+write ('chaine')
+read('chaine')
+Voyelles=['a', 'e', 'i', 'o', 'u', 'y']'
+    FOR i FROM 0 TO chaine.length  DO
+    IF (chaine[i]==" ") THEN
+        nbword = nbword +1 ;
+    END_IF
+    END_FOR
+    FOR i FROM 0 TO chaine.length  DO
+    FOR j FROM 0 TO voyelle.length DO
+    IF (chaine[i]==voyelle[j]) THEN
+        nbvoyelle =nbvoyelle  +1 ;
+    END_IF
+    END_FOR
+    write(The length of the sentence is,chaine.length  )
+    write(The number of words in the sentence is,nbword  )
+    write(The number of vowels in the sentence is,nbvoyelle  )
+END 
